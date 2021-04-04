@@ -1,6 +1,8 @@
 #ifndef MYLIB_H
 #define MYLIB_H
 #include<iostream>
+#include<fstream>
+#include <string>
 
 
 
@@ -27,29 +29,26 @@ void printArraytask3( int* intarray, int arrsize );
 //end of Functions for task #3
 
 // Task 4 Sructure and function for init and output
-#ifndef WORKER_H
-#define WORKER_H
+   #ifndef WORKER_H
+   #define WORKER_H
 
-  #pragma pack(push, 1 )
-     struct Worker
-       {
-        int id;
-        char position[64];
-        char name[64];
-        char surname[64];
-        int salary;
+     #pragma pack(push, 1 )
+       struct Worker
+         {
+          int id;
+          char position[64];
+          char name[64];
+          char surname[64];
+          int salary;
 
-     void init();
-     void print();
-     void printToFile(char* filename);
+          void init();
+          void print();
+          void printToFile(char* filename);
+         };
+     #pragma pack(pop)
 
-     };
-#pragma pack(pop)
-
-//end foFunctions for task #4
-
-
-#endif// WORKER_H
+    #endif// WORKER_H
+     //end foFunctions for task #4
 
 
 

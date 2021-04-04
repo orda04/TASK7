@@ -1,24 +1,5 @@
 #include "Mylib.h"
 
-#include<fstream>
-#include <string>
-
-
-
-//#pragma pack(push,1)
-/*struct Worker
-{
-  int id;
-  char position;
-  char name;
-  char surname;
-  int salary;
-};
-*/
-//#pragma pack(pop)
-
-
-
 //namespace for task #1 and #5 Functions
 namespace Mylib
 {
