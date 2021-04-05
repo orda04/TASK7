@@ -77,14 +77,15 @@ int main()
 
       std::cout<<"Memory usage size:"<<sizeof( Company )<<"\n";
       for(int i=0;i <company_size; i++)
-       {
-        Company[i].print();        }
+        {
+         Company[i].print();
+        }
       std::cout<<"Please enter filename :" ;
       std::cin>>filename;
 
       for(int i=0; i<company_size; i++)
        {
-        Company[i].printToFile(filename);
+        Company[i].printToFile( filename );
        }
 
       delete[] Company;

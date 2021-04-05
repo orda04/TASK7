@@ -43,7 +43,7 @@ void printArraytask3( int* intarray, int arrsize );
 
           void init();
           void print();
-          void printToFile(char* filename);
+          void printToFile( char* filename );
          };
      #pragma pack(pop)
 

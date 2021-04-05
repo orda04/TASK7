@@ -4,11 +4,11 @@
 namespace Mylib
 {
 
-   void initArray(float* array,int size)
+   void initArray( float* array, int size )
     {
       for (int i=0; i<size; i++ )
         {
-          std::cout<<"\nвведите "<<i<<" элемент массивва : ";
+          std::cout<<"\nPlease enter "<<i<<" massive element : ";
           std::cin>>array[i];
          }
      }
@@ -21,7 +21,7 @@ namespace Mylib
          }
       }
 
-   void sortArray(float* array, int size, int& belowZero, int& aboveZero)
+   void sortArray( float* array, int size, int& belowZero, int& aboveZero )
    {
        for (int i=0; i<size; i++ )
          {
@@ -42,31 +42,28 @@ namespace Mylib
 
 
 //Functions for task #3
-void initArraytask3(int* intarray,int arrsize)
+void initArraytask3( int* intarray, int arrsize )
 {
     for (int i=0; i<arrsize; i++ )
       {
-        std::cout<<"\nвведите "<<i<<" элемент массивва : ";
+        std::cout<<"\nplease enter "<<i<<" element of massive : ";
         std::cin>>intarray[i];
        }
 
 }
-void sortArraytask3(int* intarray,int arrsize)
+void sortArraytask3( int* intarray, int arrsize )
 {
-    int temp; // временная переменная для обмена элементов местами
+    int temp; // temporary variable for swap elements
 
-    // Сортировка массива пузырьком
+    //bubble sort
     for (int i = 0; i < arrsize - 1; i++)
     {
         for (int j = 0; j < arrsize - i - 1; j++)
         {
             if (intarray[j] > intarray[j + 1])
             {
-                // меняем элементы местами
-               SwapINT(intarray[j,intrarray[j+1]]);
-               // temp = intarray[j];
-               // intarray[j] = intarray[j + 1];
-               // intarray[j + 1] = temp;
+                // swap elements
+               SwapINT( intarray[j, intrarray[j+1]] );
             }
         }
     }
@@ -107,10 +104,10 @@ void Worker::print()
     std::cout<<"Worker surname: "<<surname<<"\n";
     std::cout<<"Worker salary: "<<salary<<"\n";
    }
-void Worker::printToFile(char* filename)
+void Worker::printToFile( char* filename )
    {
     std::string fileName=filename+resol;
-    std::ofstream fout(fileName,std::ios::app);
+    std::ofstream fout( fileName, std::ios::app );
     fout <<"ID:"<<id<<" ";
     fout <<"POSITION:"<<position<<" ";
     fout <<"NAME:"<<name<<" ";
